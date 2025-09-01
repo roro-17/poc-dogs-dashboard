@@ -1,0 +1,20 @@
+version: "3.9"
+services:
+  dashboard:
+    build: .
+    container_name: poc_dogs_dashboard
+    ports: ["8501:8501"]
+    env_file: .env
+    volumes:
+      - ./app/data:/app/app/data
+    develop:
+      watch:
+        - path: ./app
+          target: /app/app
+          action: sync     # sync code -> hot-reload streamlit
+        - path: ./requirements.txt
+          action: rebuild  # rebuild image si reqs changent
+        - path: ./Dockerfile
+          action: rebuild
+
+
