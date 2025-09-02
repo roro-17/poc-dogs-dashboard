@@ -6,6 +6,7 @@
     "top1_accuracy": 0.7734375,
     "top5_accuracy": 0.9791666865348816,
     "macro_f1": 0.735139586474338,
+	"train_time_min": 62,
     "eval_time_sec": 178.48666834831238,
     "model_size_mb": 276.0088,
     "confusion_matrix": [
@@ -458,6 +459,7 @@
     "top1_accuracy": 0.9397590361445783,
     "top5_accuracy": 0.9975903614457832,
     "macro_f1": 0.94117418170886,
+	"train_time_min": 35,
     "eval_time_sec": 167.314762,
     "model_size_mb": 106.0991325378418,
     "confusion_matrix": [
